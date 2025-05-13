@@ -61,8 +61,8 @@ export default function GameBoard() {
                 {
                     cards.map((card) =>
                         <Card key={card.id} card={card} onClick={handleClick} isFlipped={flippedCards.includes(card.id) || card.matched} />
-                    )
-                }
+                )
+            }
             </div>
         </>
     )

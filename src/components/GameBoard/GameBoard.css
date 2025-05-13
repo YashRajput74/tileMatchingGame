@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 12px;
-    padding: 20px;
+    padding: 16px;
+    width: 100%;
     max-width: 600px;
     margin: auto;
 }
@@ -51,17 +52,32 @@
 }
 
 .restart-btn {
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    background-color: #5f8d4e;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #76c893, #52b788);
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background 0.3s;
 }
 
 .restart-btn:hover {
-    background-color: #4c6e38;
+    background: linear-gradient(135deg, #52b788, #40916c);
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+
+    .card-front,
+    .card-back {
+        font-size: 1.4rem;
+    }
+
+    .restart-btn {
+        padding: 10px 18px;
+        font-size: 1rem;
+    }
 }
